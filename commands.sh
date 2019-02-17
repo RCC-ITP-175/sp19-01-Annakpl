@@ -31,6 +31,10 @@ ls -a
 #############################################################
 ls -l 
 
+# :::PROFESSOR FEEDBACK:::
+# Missing argument to also include hidden files
+# :::PROFESSOR FEEDBACK END:::
+
 #############################################################
 #    What is the command to list all files and folders
 #    in a directory sorted by when they were last
@@ -45,10 +49,16 @@ ls -t
 pwd 
 
 #############################################################
-#    You are in the folder /course/week1 and need to move
+#    You are in the folder /course/week1 and need to change
 #    to the /course/week2 directory. How do you do that?
 #############################################################
 mv week2 
+
+# :::PROFESSOR FEEDBACK:::
+# mv is correct if you want move files to the week2 directory
+# but will not move your terminal to that directory. I can see
+# how my instructions were confusing and have changed them.
+# :::PROFESSOR FEEDBACK END:::
 
 #############################################################
 #    You are in the /course directory and need to create 
@@ -56,6 +66,11 @@ mv week2
 #    exist. How do you do that?
 #############################################################
 cp week3
+
+# :::PROFESSOR FEEDBACK:::
+# cp will copy files to week3 directory if it already exists
+# but will not create one.
+# :::PROFESSOR FEEDBACK END:::
 
 #############################################################
 #    You are in the /course/2019/spring/week2/project
@@ -92,6 +107,11 @@ rm answers.txt
 #############################################################
 mv quiz.txt
 
+# :::PROFESSOR FEEDBACK:::
+# mv will move or cut quiz.txt to another directory but not copy it
+# :::PROFESSOR FEEDBACK END:::
+
+
 #############################################################
 #    The directory you are working in currently has these files and directories.
 #           -rw-rw-r-- 1 app  app   875 Jul 26 18:02 index.html
@@ -103,6 +123,12 @@ mv quiz.txt
 #     How would you copy all 4 html files into the public directory?
 #############################################################
 cp -r 
+
+# :::PROFESSOR FEEDBACK:::
+# -r isn't a valid argument for cp. -R is but that won't exactly
+# accomplish what you want here. How would you copy the html files
+# but not the public or views directorys?
+# :::PROFESSOR FEEDBACK END:::
 
 #############################################################
 #    The directory you are working in currently has these files and directories.
@@ -116,4 +142,7 @@ cp -r
 #############################################################
 mv -r 
 
-
+# :::PROFESSOR FEEDBACK:::
+# -r isn't a valid argument for mv.
+# How would you move the html files but not the public or views directories?
+# :::PROFESSOR FEEDBACK END:::
